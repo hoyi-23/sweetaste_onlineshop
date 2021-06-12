@@ -1,0 +1,280 @@
+.container{
+    max-width: 940px;
+    margin: 0 auto;
+}
+.top_nav{
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    .phone_nav_bar{
+        display: none;
+        @include sm{
+            display: block;
+            &:active{
+                color: $primary;
+            }
+        }
+    }
+    @include sm{
+        margin: 33px 30px;
+        padding: 0px;
+    }
+    .logo{
+        background-image: url(/img/logo-all-dark.svg);
+        width: 215.5px;
+        height: 40px;
+        @include hide-text;
+        @include sm{
+            background-image: url(/img/logotype-lg-dark.svg);
+            width: 114.14px;
+            height: 17.74px;
+            background-size: contain;
+        }
+    }
+    .nav_list{
+        a{
+            padding: 20px 30px;
+            color: $primary;
+            font-size: 16px;
+            font-weight: bold;
+            &:hover{
+                background-color: $primary;
+                color: #fff;
+            }
+        }
+        
+        @include sm{
+            display: none;
+        }
+    }
+    .phone_cart_btn{
+        display: none;
+        @include sm{
+            display: block;
+            &:active{
+                color: $primary;
+            }
+        }
+    }
+}
+.top_section_img{
+    background: transparent url('https://bit.ly/2OhbMHr') 0% 0% no-repeat padding-box;
+    background-size: cover;
+    opacity: 1;
+    background-position: center;
+    width: 940px;
+    height: 496px;
+    margin-bottom: 15.4rem;
+    .card_list{
+        top: 110%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        .card_bg_img{
+            height: 256px;
+            width: 260px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            filter: blur(1px);
+        }
+        .card_text{
+            top: 0%;
+            height: 256px;
+            width: 260px;
+            justify-content: center; 
+            align-items: center; 
+            font-size: 30px;
+            font-weight: bold;
+            color:#fff;
+            -webkit-writing-mode: vertical-lr;
+            writing-mode: vertical-lr ;
+            background-blend-mode: multiply;
+            opacity: 80%;
+            &:hover{
+            background-color: $warning;
+            color: $primary;
+            }
+        }
+        .card_1{
+            background-image: url('https://bit.ly/2R5tqwD');
+            background-position: center center;
+        }
+        .card_2{
+            background-image: url('https://bit.ly/2Dwoxd7');
+        }
+        .card_3{
+            background-image: url('https://bit.ly/2OUteif');
+        }  
+        
+    }
+}
+main{
+    margin-bottom: 5.014rem;
+    .main_bg{
+        height: 420px;
+        margin-bottom: 6.563rem;
+        .main_section_title{
+            width: 88.94px;
+            height: 307.15px;
+            background-size: cover;
+            top: -20px;
+        }
+        p{
+            line-height: 2.5rem;
+            font-size: 16px;
+            -webkit-writing-mode: vertical-rl;
+            writing-mode: vertical-rl ;
+            height: 280px;
+            margin-top: 70px;
+            text-align: left;
+        }
+        .main_section_img{
+            width: 460px;
+            height: 460px;
+            background-position: center center;
+            top: -20px;
+        }
+        .main_title_1{
+            background-image: url(/img/lg-為什麼選擇了做甜點.svg);
+            right: 0px;
+        }
+        .main_p_1{
+            right: 160px;
+        }
+        .main_img_1{
+            background-image: url('https://bit.ly/2xPn7Eq');
+            left: 0px;
+        }
+        .main_img_2{
+            background-image: url('https://bit.ly/2zzAQS4');
+            right: 0px;
+        }
+        .main_title_2{
+            background-image: url(/img/lg-為什麼一定要吃甜點.svg);
+            right: 500px;
+        }
+        
+    }
+    .main_title_3{
+        justify-content: center;
+        width: 89px;
+        height: 327.79px;
+        background-size: cover;
+    }
+}
+.product_list{
+    margin-bottom: 3.75rem;
+    .product_imgs{
+        height: 315px;
+        width: 300px;
+    }
+    .fa-heart{
+        color: $primary;
+        font-weight: bold;
+        right: 22px;
+        top: 19px;
+        font-size: 20px;
+        z-index: 2;
+        &:hover{
+            color: $warning;
+        }
+    }
+    
+    ul{
+        width: 300px;
+        .item{
+            color: $primary;
+            border-left: solid 1px $secondary;
+            border-right: solid 1px $secondary;
+            font-size: 20px;
+            padding: 14px 33px;
+        }
+        .pri{
+            padding: 14px 24px;
+            font-size: 20px;
+            color: $primary;
+            border-right: solid 1px $secondary;
+        }
+    }
+    .add_btn{
+        text-align: center;
+        padding: 16px 0px;
+        color: $primary;
+        font-weight: bold;
+        font-size: 24px;
+        &:hover{
+            background: $primary;
+            color: #fff;
+        }
+    }
+    .product_item::before{
+        content: "本日精選";
+        color: #fff;
+        background-color: $primary;
+        padding: 10px;
+        position: absolute;
+        left: 20px;
+        z-index: 2;
+        writing-mode: vertical-lr;
+        font-size: 16px;
+    }
+}
+.footer_head{
+    padding: 42px 0px;
+}
+.footer_head_logo{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+.footer_head_text{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.fa-envelope{
+    color: $primary;
+    font-size: 24px;
+    padding: 16px 20px;
+}
+.input_email{
+    border: none;
+    height: 56px;
+    padding: 0px;
+    width: 264px;
+}
+.submit{
+    background-color: $warning;
+    border: none;
+    cursor: pointer;
+    height: 56px;
+    padding: 0px 17px;
+    img{
+        font-size: 16px;
+    }
+}
+
+.footer_bottom{
+    padding: 30px 0px;
+    .footer_logo{
+        width: 171.22px;
+        height: 26.6px;
+    }
+    .footer_contact{
+        font-size: 16px;
+        line-height: 24px;
+        color: $primary;
+    }
+    .footer_quote{
+        width: 59.28px;
+    }
+}
+.footer_social{
+    margin-bottom: 30px;
+    .social_link{
+        color: $primary;
+        width: 32px;
+        margin-right: 8px;
+    }
+}
