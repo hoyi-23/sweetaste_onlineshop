@@ -4,19 +4,13 @@
     white-space: nowrap;
     overflow: hidden;
 }
-//RWD
-@mixin sm{
-    @media (max-width:576px) {
-        @content        
-    };
-};
-@mixin md{
-    @media (max-width:768px) {
-        @content        
-    };
-};
-@mixin lg{
-    @media (max-width:992px) {
-        @content        
-    };
-};
+
+//zoomimage
+@mixin zoomimage{
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+

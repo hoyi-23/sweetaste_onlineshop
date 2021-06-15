@@ -4,144 +4,208 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
     <title>Sweetaste 甜點電商</title>
 </head>
 <body>
-    <header class="container">
-        <nav class="top_nav d-flex justify-content-between align-items-center">
-            <a href="#" class="phone_nav_bar"><i class="fas fa-bars"></i></a>
-            <h1><a href="#" class="logo">Sweetaste</a></h1>
-            <ul class="nav_list d-flex">
-                <li><a href="#">首頁</a></li>
-                <li><a href="#">甜點</a></li>
-                <li><a href="#">登入</a></li>
-                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+    <!---top_nav-->
+    <nav class="navbar navbar-expand-md navbar-light bg-white py-3">
+        <div class="container">
+            <!---phone_toogle_btn-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--logo-->
+            <a class="navbar-brand" href="#">
+                <!--md-logo-->
+                <img src="img/logo-all-dark.svg" alt="sweetaste 甜點專賣店" class="d-none d-md-flex logo_size_md">
+                <!--sm-logo-->
+                <img src="img/logotype-lg-dark.svg" alt="sweetaste 甜點專賣店" class="d-flex d-md-none logo_size_sm">
+            </a>
+            <!---phone_purchase_btn-->
+            <a href="#" class="d-block d-md-none">
+                <span><i class="fas fa-shopping-cart"></i></span>
+            </a>
+            <!---nav_list-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link px-4 fw-bold" aria-current="page" href="#">首頁</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link px-4 fw-bold" href="#">甜點</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link px-4 fw-bold" href="#">登入</a>
+                </li>
             </ul>
-            <a href="#" class="phone_cart_btn"><i class="fas fa-shopping-cart"></i></a>
-        </nav>
-    </header>
-    <div class="container top_section_img position-relative">
-        <ul class="card_list d-flex position-absolute">
-            <li class="position-relative">
-                <div class="card_1 card_bg_img"></div>
-                <a href="#" class="card_text position-absolute bg-primary d-flex">本日精選</a>
-            </li>
-            <li  class="position-relative">
-                <div class="card_2 card_bg_img"></div>
-                <a href="#" class="card_text position-absolute bg-primary d-flex">人氣推薦</a>
-            </li>
-            <li  class="position-relative">
-                <div class="card_3 card_bg_img"></div>
-                <a href="#" class="card_text position-absolute bg-primary d-flex">新品上市</a>
-            </li> 
-        </ul> 
-    </div>
-    <main>
-        <section class="main_bg bg-secondary">
-            <div class="container d-flex position-relative">
-                <h2 class="main_section_title main_title_1 position-absolute"></h2>
-                <p class="main_p_1 position-absolute">青山依舊在，幾度夕陽紅。慣看秋月春風
-                    一壺濁酒喜相逢，浪花淘盡英雄。是非
-                    成敗轉頭空，滾滾長江東逝水，白髮漁樵江
-                    ，古今多少事，都付笑談中。
-                    <br>
-                    <br>
-                    是非成敗轉頭空，滾滾長江東逝水，白
-                    髮江渚上，古今多少事，都付笑談中。
-                </p>
-                <div class="main_section_img position-absolute main_img_1"></div>
-            </div>
-        </section>
-        <section class="main_bg bg-secondary">
-            <div class="container  d-flex position-relative">
-                <p class="position-absolute">青山依舊在，幾度夕陽紅。慣看秋月春風
-                    一壺濁酒喜相逢，浪花淘盡英雄。是非
-                    成敗轉頭空，滾滾長江東逝水，白髮漁樵江
-                    ，古今多少事，都付笑談中。
-                    <br>
-                    <br>
-                    是非成敗轉頭空，滾滾長江東逝水，白
-                    髮江渚上，古今多少事，都付笑談中。
-                </p>
-                <h2 class="main_section_title main_title_2 position-absolute"></h2>
-                <div class="main_section_img position-absolute main_img_2"></div>
-            </div>
-        </section>
-        <h2 class="container main_title_3 d-flex">
-            <img src="img/lg-想吃甜點是不需要理由的.svg" alt="">
-        </h2>
-    </main>
-    <ul class="container product_list justify-content-between d-flex">
-        <li class="flex-column d-flex position-relative">
-             <img src="https://bit.ly/2zBjQuq" alt="#" class="product_imgs position-relative">
-             <a href="#"><i class="far fa-heart position-absolute"></i></a>
-            <ul class="d-flex justify-content-between">
-                <li class="item">焦糖馬卡龍</li>
-                <li class="pri">NT$ 450</li>
-            </ul>
-            <a href="#" class="add_btn bg-secondary">加入購物車</a>
-        </li>
-        <li class="flex-column d-flex position-relative">
-                <img src="https://bit.ly/2zBDAxX" alt="#" class="product_imgs position-relative">
-                <a href="#"><i class="far fa-heart position-absolute"></i></a>
-            <ul class="d-flex justify-content-between">
-                <li class="item">焦糖馬卡龍</li>
-                <li class="pri">NT$ 450</li>
-            </ul>
-            <a href="#" class="add_btn bg-secondary">加入購物車</a>
-        </li>
-        <li class="flex-column d-flex position-relative">
-                <img src="https://bit.ly/2QbVsVR" alt="#" class="product_imgs position-relative">
-                <a href="#"><i class="far fa-heart position-absolute"></i></a>
-            <ul class="d-flex justify-content-between">
-                <li class="item">焦糖馬卡龍</li>
-                <li class="pri">NT$ 450</li>
-            </ul>
-            <a href="#" class="add_btn bg-secondary">加入購物車</a>
-        </li>
-    </ul>
-    <footer>
-        <div class="bg-primary footer_head">
-            <div class="container d-flex justify-content-evenly">
-                <div class="d-flex align-items-center">
-                    <img src="img/logo-light.svg" alt="#" class="footer_head_logo">
-                    <p class="footer_head_text">訂閱你我的甜蜜郵件</p>
-                </div>   
-                <form class="d-flex">
-                    <label for="email"><i class="fas fa-envelope bg-secondary"></i></label>
-                    <input type="text" class="input_email bg-secondary" value="" id="email">
-                    <button type="submit" class="submit">
-                        <img src="img/arrow_forward_black_18dp.svg" alt="#">
-                    </button>
-                </form>
+            <!---pc_purchase_btn-->
+            <a href="#" class="d-none d-md-block ">
+                <span><i class="fas fa-shopping-cart px-2"></i></span>
+            </a>
             </div>
         </div>
-        <div class="bg-secondary">
-            <div class="container d-flex justify-content-between footer_bottom">
-                <div class="d-flex flex-column justify-content-between">
-                    <img src="img/logotype-lg-dark.svg" alt="#" class="footer_logo">
-                    <div class="d-flex flex-column align-items-start footer_contact">
-                        <p>07-1234-5678</p>
-                        <p>sweetaste@email.com</p>
-                        <p>800 高雄市新興區幸福路 520 號</p>
+        </nav>
+    <!---Header_Section-->
+    <header class="container-md position-relative">
+        <div class="top_section overflow-hidden"></div>
+        <div class="row d-flex justify-content-center">
+            <ul class="col-lg-9  d-flex position-absolute top-lg-90">
+                <li class="col-4 position-relative card border-0">
+                    <div class="card_1"></div>
+                    <a href="#" class="position-absolute d-flex w-100 h-100 card_text">本日精選</a>
+                </li>
+                <li  class="col-4 position-relative card border-0">
+                    <div class="card_2"></div>
+                    <a href="#" class="position-absolute d-flex  w-100 h-100 card_text">人氣推薦</a>
+                </li>
+                <li  class="col-4 position-relative card border-0">
+                    <div class="card_3"></div>
+                    <a href="#" class="position-absolute d-flex  w-100 h-100 card_text">新品上市</a>
+                </li> 
+            </ul>
+        </div>
+    </header>
+    <!--main-section-->
+    <main>
+        <!--為什麼選擇了做甜點--->
+        <section class="main-section position-relative">
+            <div class="container-md">
+                <div class="row flex-column flex-lg-row  justify-content-lg-center">
+                    <img src="img/sm-橫式-為什麼選擇了做甜點.svg" alt="#" class="main_title d-lg-none mx-auto">
+                    <div class="col-lg-6 position-relative">
+                        <div class="main_img main_img_1 order-lg-1 zoomimage"></div>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-lg-between">
+                        <p class="col-lg-9 main_text text-center order-lg-2 px-md-5">
+                            青山依舊在，幾度夕陽紅。慣看秋月春
+                            一壺濁酒喜相逢，浪花淘盡英雄。是非
+                            轉頭空，滾滾長江東逝水，白髮漁樵江
+                            古今多少事，都付笑談中。
+                            <br>
+                            <br>
+                            是非成敗轉頭空，滾滾長江東逝水，白
+                            樵江渚上，古今多少事，都付笑談中。
+                        </p>
+                        <img src="img/lg-為什麼選擇了做甜點.svg" alt="#" class="d-none d-lg-flex col-lg-2 order-lg-3  align-self-start">
                     </div>
                 </div>
-                <div>
-                    <img src="img/sm-今天是個吃甜點的好日子.svg" alt="#" class="footer_quote">
+            </div>
+            <div class="d-none d-lg-block bg-secondary container-fluid position-absolute top-5" style="height: 420px; z-index: -99;"></div>
+        </section>
+         <!--為什麼一定要吃甜點--->
+        <section class="position-relative">
+            <div class="container-md">
+                <div class="row flex-column flex-lg-row  justify-content-lg-between">
+                        <img src="img/sm-橫式-為什麼一定要吃甜點.svg" alt="#" class="main_title d-lg-none mx-auto">
+                        <div class="col-lg-5 position-relative order-lg-2">
+                            <div class="main_img main_img_2 zoomimage"></div>
+                        </div>
+                        <div class="col-lg-6 d-flex justify-content-lg-between order-lg-1">
+                            <p class="col-lg-9 main_text text-center px-md-5">
+                                青山依舊在，幾度夕陽紅。慣看秋月春
+                                一壺濁酒喜相逢，浪花淘盡英雄。是非
+                                轉頭空，滾滾長江東逝水，白髮漁樵江
+                                古今多少事，都付笑談中。
+                                <br>
+                                <br>
+                                是非成敗轉頭空，滾滾長江東逝水，白
+                                樵江渚上，古今多少事，都付笑談中。
+                            </p>
+                            <img src="img/lg-為什麼一定要吃甜點.svg" alt="#" class="d-none d-lg-flex col-lg-2 align-self-start">
+                        </div>
                 </div>
             </div>
-            <div class="container d-flex justify-content-between">
-                <div class="footer_social d-flex">
-                <a href="#"><img src="img/ic-line@.svg" alt="#" class="social_link"></a>
-                <a href="#"><img src="img/ic-facebook.svg" alt="#" class="social_link"></a>
+            <div class="d-none d-lg-block bg-secondary container-fluid position-absolute top-5" style="height: 420px; z-index: -99;"></div>
+        </section>
+        <!--想吃甜點是不需要理由的--->
+        <section class="row justify-content-center my-lg-7 my-4">
+            <img src="img/sm-橫式-想吃甜點是不需要理由的.svg" alt="想吃甜點是不需要理由的" class="main_title d-lg-none mx-auto">
+            <img src="img/lg-想吃甜點是不需要理由的.svg" alt="想吃甜點是不需要理由的" class="d-none d-lg-block col-1">
+        </section>
+    </main>
+    <!--product-list-->
+    <section class="container mb-lg-6 mb-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-4">
+                <div class="product_img product_img_1 zoomimage position-relative"></div>
+                <div class="d-flex">
+                    <div class="col-7 text-center py-3 border-2 border-start border-end border-secondary text-primary fs-5 fw-bolder">焦糖馬卡龍</div>
+                    <div class="col-5 text-center py-3 border-end border-secondary text-primary fs-5 fw-bolder">NT$ 450</div>
                 </div>
-                <p class="align-self-center">© 2018 Sweetaste* All Rights Reserved</p>
+                <div class="btn col-12 text-primary bg-secondary fw-bold fs-4 text-center py-3">加入購物車</div>
+            </div>
+            <div class="col-lg-4 d-none d-lg-block">
+                <div class="product_img product_img_2 zoomimage position-relative"></div>
+                <div class="d-flex">
+                    <div class="col-7 text-center py-3 border-2 border-start border-end border-secondary text-primary fs-5 fw-bolder">焦糖馬卡龍</div>
+                    <div class="col-5 text-center py-3 border-end border-secondary text-primary fs-5 fw-bolder">NT$ 450</div>
+                </div>
+                <div class="btn col-12 text-primary bg-secondary fw-bold fs-4 text-center py-3">加入購物車</div>
+            </div>
+            <div class="col-lg-4  d-none d-lg-block">
+                <div class="product_img product_img_3 zoomimage position-relative"></div>
+                <div class="d-flex">
+                    <div class="col-7 text-center py-3 border-2 border-start border-end border-secondary text-primary fs-5 fw-bolder">焦糖馬卡龍</div>
+                    <div class="col-5 text-center py-3 border-end border-secondary text-primary fs-5 fw-bolder">NT$ 450</div>
+                </div>
+                <div class="btn col-12 text-primary bg-secondary fw-bold fs-4 text-center py-3">加入購物車</div>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer>
+        <div class="container-fluid bg-primary">
+            <div class="container footer_container">
+                <div class="row justify-content-center">
+                    <div class="col-md-5 d-flex align-items-center ">
+                        <img src="img/logo-light.svg" alt="sweetaste" style="width:40px;height:40px;">
+                        <p class="fs-4 fw-bold mb-0 ps-3 text-white">訂閱你我的甜蜜郵件</p>
+                    </div>
+                    <div class="col-md-5 py-4">
+                        <form action="#" class="d-flex">
+                            <label for="email"><i class="fas fa-envelope text-primary bg-secondary" style="font-size: 24px;"></i></label>
+                            <input type="mail" id="email" class="form_input_email border-0 p-0 bg-secondary w-100">
+                            <button class="bg-warning footer_form_btn p-0  px-4 border-0"><i class="fas fa-arrow-right text-primary fs-4"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-secondary">
+            <div class="container">
+            <div class="row justify-content-center py-9">
+                <div class="col-lg-5 d-flex flex-column justify-content-between">
+                    <img src="img/logotype-lg-dark.svg" alt="Sweetaste" class="logo_size_sm mb-9 mb-lg-0">
+                    <div class="mb-lg-0">
+                        <p class="text-primary fw-bolder">07-1234-5678</p>
+                        <p class="text-primary fw-bolder">sweetaste@email.com</p>
+                        <p class="text-primary fw-bolder">800 高雄市新興區幸福路 520 號</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-flex justify-content-end">
+                    <img src="img/sm-今天是個吃甜點的好日子.svg" alt="今天是個吃甜點的好日子" style="width:59.28px;">
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <!--social-link-->
+                    <div class="col-md-5 d-flex align-items-center p-0">
+                        <a href="#" class="pe-2"><i class="fas fa-at bg-primary text-secondary rounded" style="font-size: 24px;padding: 2px"></i></a>
+                        <a href="#"><i class="fab fa-facebook-square text-primary" style="font-size: 32px;"></i></a>
+                    </div>
+                    <!--copyright-->
+                    <p class="col-md-5 text-primary d-flex justify-content-md-end p-0 pt-4 pt-md-0">© 2018 Sweetaste* All Rights Reserved</p>
+                </div>
             </div>
         </div>
     </footer>
 
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="all.js"></script>
 </body>
 </html>

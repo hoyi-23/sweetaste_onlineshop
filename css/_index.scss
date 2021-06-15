@@ -1,280 +1,181 @@
-.container{
-    max-width: 940px;
-    margin: 0 auto;
+//響應式圖片
+.zoomimage{
+    @include zoomimage;
 }
-.top_nav{
-    list-style: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 0 auto;
-    .phone_nav_bar{
-        display: none;
-        @include sm{
-            display: block;
-            &:active{
-                color: $primary;
-            }
-        }
-    }
-    @include sm{
-        margin: 33px 30px;
-        padding: 0px;
-    }
-    .logo{
-        background-image: url(/img/logo-all-dark.svg);
-        width: 215.5px;
-        height: 40px;
-        @include hide-text;
-        @include sm{
-            background-image: url(/img/logotype-lg-dark.svg);
-            width: 114.14px;
-            height: 17.74px;
-            background-size: contain;
-        }
-    }
-    .nav_list{
-        a{
-            padding: 20px 30px;
-            color: $primary;
-            font-size: 16px;
-            font-weight: bold;
-            &:hover{
-                background-color: $primary;
-                color: #fff;
-            }
-        }
-        
-        @include sm{
-            display: none;
-        }
-    }
-    .phone_cart_btn{
-        display: none;
-        @include sm{
-            display: block;
-            &:active{
-                color: $primary;
-            }
-        }
-    }
+//top_nav
+//logo
+.logo_size_md{
+    width: 219.49px;
+    height: 40px;
 }
-.top_section_img{
-    background: transparent url('https://bit.ly/2OhbMHr') 0% 0% no-repeat padding-box;
+.logo_size_sm{
+    width: 171.22px;
+    height: 26.6px;
+}
+//header_Section
+.top_section{
+    background-image: url(https://bit.ly/2OhbMHr);
+    width: 100%;
+    height: 277px;
     background-size: cover;
-    opacity: 1;
-    background-position: center;
-    width: 940px;
-    height: 496px;
-    margin-bottom: 15.4rem;
-    .card_list{
-        top: 110%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        .card_bg_img{
-            height: 256px;
-            width: 260px;
-            background-size: cover;
-            background-repeat: no-repeat;
-            filter: blur(1px);
+    background-position: center center;
+    margin: 0 auto;
+    @include md{
+        width: 100%;
+        height: 496px;
+    }
+    @include lg{
+        width: 100%;
+        height: 496px;
+    }
+    @include xl{
+        width: 100%;
+        height: 496px;
+    }
+
+}
+//header_card
+header{
+    .top-lg-90{
+        @include md{
+            top: 90%;
         }
-        .card_text{
-            top: 0%;
+    }
+    .card{
+        height: 180px;
+        @include lg{
             height: 256px;
-            width: 260px;
-            justify-content: center; 
-            align-items: center; 
-            font-size: 30px;
-            font-weight: bold;
-            color:#fff;
-            -webkit-writing-mode: vertical-lr;
-            writing-mode: vertical-lr ;
-            background-blend-mode: multiply;
-            opacity: 80%;
-            &:hover{
+        }
+    }
+    .card_1{
+        background-image: url(https://bit.ly/2R5tqwD);
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        filter: blur(1px);
+    }
+    .card_2{
+        background-image: url(https://bit.ly/2Dwoxd7);
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        filter: blur(1px);
+    }
+    .card_3{
+        background-image: url(https://bit.ly/2OUteif);
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        filter: blur(1px);
+    }
+    .card_text{
+        writing-mode: vertical-lr;
+        letter-spacing: 15px;
+        padding-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        background-color: $primary;
+        color: #fff;
+        opacity: 0.9;
+        &:hover{
             background-color: $warning;
             color: $primary;
-            }
         }
-        .card_1{
-            background-image: url('https://bit.ly/2R5tqwD');
-            background-position: center center;
-        }
-        .card_2{
-            background-image: url('https://bit.ly/2Dwoxd7');
-        }
-        .card_3{
-            background-image: url('https://bit.ly/2OUteif');
-        }  
-        
     }
 }
+//main_section
 main{
-    margin-bottom: 5.014rem;
-    .main_bg{
-        height: 420px;
-        margin-bottom: 6.563rem;
-        .main_section_title{
-            width: 88.94px;
-            height: 307.15px;
-            background-size: cover;
-            top: -20px;
+    .main-section{
+        margin-top: 220px;
+        margin-bottom: 30px;
+        @include md{
+            margin-top: 180px;
+            margin-bottom: 30px;
         }
-        p{
-            line-height: 2.5rem;
-            font-size: 16px;
-            -webkit-writing-mode: vertical-rl;
-            writing-mode: vertical-rl ;
-            height: 280px;
-            margin-top: 70px;
-            text-align: left;
+        @media (min-width: 1024px){
+            margin-top: 240px;
+            margin-bottom: 30px;
         }
-        .main_section_img{
-            width: 460px;
+        @include xl{
+        margin-top: 300px; 
+        margin-bottom: 105px;
+        }
+    }
+    .main_title{
+        width: 196px;
+        margin-bottom: 30px;
+        @include md{
+            width: 300px;
+        }
+    }
+    .main_img{
+        height: 250px;
+        @include md{
             height: 460px;
-            background-position: center center;
-            top: -20px;
         }
-        .main_title_1{
-            background-image: url(/img/lg-為什麼選擇了做甜點.svg);
-            right: 0px;
-        }
-        .main_p_1{
-            right: 160px;
-        }
-        .main_img_1{
-            background-image: url('https://bit.ly/2xPn7Eq');
-            left: 0px;
-        }
-        .main_img_2{
-            background-image: url('https://bit.ly/2zzAQS4');
-            right: 0px;
-        }
-        .main_title_2{
-            background-image: url(/img/lg-為什麼一定要吃甜點.svg);
-            right: 500px;
-        }
-        
-    }
-    .main_title_3{
-        justify-content: center;
-        width: 89px;
-        height: 327.79px;
-        background-size: cover;
-    }
-}
-.product_list{
-    margin-bottom: 3.75rem;
-    .product_imgs{
-        height: 315px;
-        width: 300px;
-    }
-    .fa-heart{
-        color: $primary;
-        font-weight: bold;
-        right: 22px;
-        top: 19px;
-        font-size: 20px;
-        z-index: 2;
-        &:hover{
-            color: $warning;
+        @include lg{
+            height: 460px;
         }
     }
-    
-    ul{
-        width: 300px;
-        .item{
-            color: $primary;
-            border-left: solid 1px $secondary;
-            border-right: solid 1px $secondary;
-            font-size: 20px;
-            padding: 14px 33px;
-        }
-        .pri{
-            padding: 14px 24px;
-            font-size: 20px;
-            color: $primary;
-            border-right: solid 1px $secondary;
-        }
-    }
-    .add_btn{
-        text-align: center;
-        padding: 16px 0px;
-        color: $primary;
-        font-weight: bold;
-        font-size: 24px;
-        &:hover{
-            background: $primary;
-            color: #fff;
-        }
-    }
-    .product_item::before{
-        content: "本日精選";
-        color: #fff;
-        background-color: $primary;
-        padding: 10px;
-        position: absolute;
-        left: 20px;
-        z-index: 2;
-        writing-mode: vertical-lr;
+    .main_text{
         font-size: 16px;
+        line-height: 32px;
+        padding: 30px;
+        background-color: $secondary;
+        @include lg{
+            writing-mode: vertical-rl;
+            margin: 70px 0px;
+            height: 280px;
+            right: 20%;
+            background-color: transparent;
+        }
+    }
+    .main_img_1{
+        background-image: url(https://bit.ly/2xPn7Eq);
+    }
+    .main_img_2{
+        background-image: url(https://bit.ly/2zzAQS4);
     }
 }
-.footer_head{
-    padding: 42px 0px;
-}
-.footer_head_logo{
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
-}
-.footer_head_text{
-    font-size: 24px;
+//product_list
+.product_img::before{
+    content: "本日精選";
+    background-color: $primary;
+    padding: 10px;
     font-weight: bold;
+    color: #fff;
+    writing-mode: vertical-lr;
+    position: absolute;
+    left: 20px;
 }
-
-
+.product_img_1{
+    background-image: url(https://bit.ly/2zBjQuq);
+    height: 315px;
+}
+.product_img_2{
+    background-image: url(https://bit.ly/2zBDAxX);
+    height: 315px;
+}
+.product_img_3{
+    background-image: url(https://bit.ly/2QbVsVR);
+    height: 315px;
+}
+//footer
 .fa-envelope{
-    color: $primary;
-    font-size: 24px;
     padding: 16px 20px;
 }
-.input_email{
-    border: none;
+.form_input_email{
     height: 56px;
-    padding: 0px;
-    width: 264px;
 }
-.submit{
-    background-color: $warning;
-    border: none;
-    cursor: pointer;
+.footer_form_btn{
     height: 56px;
-    padding: 0px 17px;
-    img{
-        font-size: 16px;
-    }
 }
-
-.footer_bottom{
-    padding: 30px 0px;
-    .footer_logo{
-        width: 171.22px;
-        height: 26.6px;
-    }
-    .footer_contact{
-        font-size: 16px;
-        line-height: 24px;
-        color: $primary;
-    }
-    .footer_quote{
-        width: 59.28px;
-    }
-}
-.footer_social{
-    margin-bottom: 30px;
-    .social_link{
-        color: $primary;
-        width: 32px;
-        margin-right: 8px;
+.footer_container{
+    padding-top: 34px;
+    @include md{
+        padding-top: 0px;
     }
 }
