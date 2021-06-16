@@ -13214,6 +13214,16 @@ main .main_img_2 {
   left: 20px;
 }
 
+.product_add_btn {
+  color: #3F5D45;
+  background-color: #EAF0ED;
+}
+
+.product_add_btn:hover, .product_add_btn:focus, .product_add_btn:active {
+  color: #fff;
+  background-color: #3F5D45;
+}
+
 .product_img_1 {
   background-image: url(https://bit.ly/2zBjQuq);
   height: 315px;

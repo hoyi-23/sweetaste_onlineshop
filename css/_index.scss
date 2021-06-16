@@ -151,6 +151,16 @@ main{
     position: absolute;
     left: 20px;
 }
+.product_add_btn{
+    color: $primary;
+    background-color: $secondary;
+    &:hover,
+    &:focus,
+    &:active{
+        color: #fff;
+        background-color: $primary;
+    }
+}
 .product_img_1{
     background-image: url(https://bit.ly/2zBjQuq);
     height: 315px;
