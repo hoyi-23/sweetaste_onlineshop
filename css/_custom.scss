@@ -1,0 +1,24 @@
+//text
+.text-center{
+    text-align: center;
+}
+//link_hover
+.bg_primary_hover{
+    background-color: $primary;
+    color: #fff;
+    &:hover,
+    &:focus,
+    &:active{
+        background-color: $secondary;
+        color: $primary;
+    }
+}
+.bg_white_hover{
+    background-color: #fff;
+    color: $primary;
+    &:hover,
+    &:focus,
+    &:active{
+        background-color: $secondary;
+    }
+}

@@ -14,3 +14,30 @@
     background-size: cover;
 }
 
+//screen_size
+
+@mixin sm{
+    @media (min-width:576px) {
+        @content        
+    };
+};
+@mixin md{
+    @media (min-width:768px) {
+        @content        
+    };
+};
+@mixin lg{
+    @media (min-width:992px) {
+        @content        
+    };
+};
+@mixin xl{
+    @media (min-width:1140px) {
+        @content        
+    };
+};
+@mixin xxl{
+    @media (min-width:1320px) {
+        @content        
+    };
+};

@@ -12994,15 +12994,63 @@ a {
 
 ul {
   list-style: none;
+  padding: 0px;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
 }
 
 .text-center {
   text-align: center;
 }
 
-p {
-  padding: 0px;
-  margin: 0px;
+.bg_primary_hover {
+  background-color: #3F5D45;
+  color: #fff;
+}
+
+.bg_primary_hover:hover, .bg_primary_hover:focus, .bg_primary_hover:active {
+  background-color: #EAF0ED;
+  color: #3F5D45;
+}
+
+.bg_white_hover {
+  background-color: #fff;
+  color: #3F5D45;
+}
+
+.bg_white_hover:hover, .bg_white_hover:focus, .bg_white_hover:active {
+  background-color: #EAF0ED;
+}
+
+.product_header_img {
+  background-image: url(https://bit.ly/2Qodh3Z);
+  height: 277px;
+}
+
+@media (min-width: 992px) {
+  .product_header_img {
+    height: 496px;
+  }
+}
+
+.product_header_img_text {
+  background-image: url(/img/lg-想吃甜點是不需要理由的.svg);
+  height: 218.52px;
+  width: 59.41px;
+  top: 30px;
+  right: 29.99px;
+}
+
+@media (min-width: 992px) {
+  .product_header_img_text {
+    height: 327.79px;
+    width: 89.1px;
+    top: 20px;
+    right: 49.9px;
+  }
 }
 
 .zoomimage {

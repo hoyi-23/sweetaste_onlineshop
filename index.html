@@ -11,43 +11,8 @@
 </head>
 <body>
     <!---top_nav-->
-    <nav class="navbar navbar-expand-md navbar-light bg-white py-3">
-        <div class="container">
-            <!---phone_toogle_btn-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!--logo-->
-            <a class="navbar-brand" href="#">
-                <!--md-logo-->
-                <img src="img/logo-all-dark.svg" alt="sweetaste 甜點專賣店" class="d-none d-md-flex logo_size_md">
-                <!--sm-logo-->
-                <img src="img/logotype-lg-dark.svg" alt="sweetaste 甜點專賣店" class="d-flex d-md-none logo_size_sm">
-            </a>
-            <!---phone_purchase_btn-->
-            <a href="#" class="d-block d-md-none">
-                <span><i class="fas fa-shopping-cart"></i></span>
-            </a>
-            <!---nav_list-->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                <a class="nav-link px-4 fw-bold mt-4 mt-lg-0" aria-current="page" href="#">首頁</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link px-4 fw-bold" href="#">甜點</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link px-4 fw-bold" href="#">登入</a>
-                </li>
-            </ul>
-            <!---pc_purchase_btn-->
-            <a href="#" class="d-none d-md-block ">
-                <span><i class="fas fa-shopping-cart px-2"></i></span>
-            </a>
-            </div>
-        </div>
-        </nav>
+    <script type="text/javascript" src="layout/top_nav.js"></script>
+    <!--top_nav-end-->
     <!---Header_Section-->
     <header class="container-md position-relative">
         <div class="top_section overflow-hidden"></div>
@@ -121,9 +86,11 @@
             <div class="d-none d-lg-block bg-secondary container-fluid position-absolute top-5" style="height: 420px; z-index: -99;"></div>
         </section>
         <!--想吃甜點是不需要理由的--->
-        <section class="row justify-content-center my-lg-7 my-4">
-            <img src="img/sm-橫式-想吃甜點是不需要理由的.svg" alt="想吃甜點是不需要理由的" class="main_title d-lg-none mx-auto">
-            <img src="img/lg-想吃甜點是不需要理由的.svg" alt="想吃甜點是不需要理由的" class="d-none d-lg-block col-1">
+        <section class="container-md">
+            <div class="row justify-content-center my-lg-7 my-4">
+                <img src="img/sm-橫式-想吃甜點是不需要理由的.svg" alt="想吃甜點是不需要理由的" class="main_title d-lg-none mx-auto">
+                <img src="img/lg-想吃甜點是不需要理由的.svg" alt="想吃甜點是不需要理由的" class="d-none d-lg-block col-1">
+            </div>
         </section>
     </main>
     <!--product-list-->
@@ -156,52 +123,8 @@
         </div>
     </section>
     <!--footer-->
-    <footer>
-        <div class="container-fluid bg-primary">
-            <div class="container footer_container">
-                <div class="row justify-content-center">
-                    <div class="col-md-5 d-flex align-items-center ">
-                        <img src="img/logo-light.svg" alt="sweetaste" style="width:40px;height:40px;">
-                        <p class="fs-4 fw-bold mb-0 ps-3 text-white">訂閱你我的甜蜜郵件</p>
-                    </div>
-                    <div class="col-md-5 py-4">
-                        <form action="#" class="d-flex">
-                            <label for="email"><i class="fas fa-envelope text-primary bg-secondary" style="font-size: 24px;"></i></label>
-                            <input type="mail" id="email" class="form_input_email border-0 p-0 bg-secondary w-100 rounded-0">
-                            <button class="bg-warning footer_form_btn p-0  px-4 border-0"><i class="fas fa-arrow-right text-primary fs-4"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid bg-secondary">
-            <div class="container">
-            <div class="row justify-content-center py-9">
-                <div class="col-lg-5 d-flex flex-column justify-content-between">
-                    <img src="img/logotype-lg-dark.svg" alt="Sweetaste" class="logo_size_sm mb-9 mb-lg-0">
-                    <div class="mb-lg-0">
-                        <p class="text-primary fw-bolder">07-1234-5678</p>
-                        <p class="text-primary fw-bolder">sweetaste@email.com</p>
-                        <p class="text-primary fw-bolder">800 高雄市新興區幸福路 520 號</p>
-                    </div>
-                </div>
-                <div class="col-lg-5 d-none d-lg-flex justify-content-end">
-                    <img src="img/sm-今天是個吃甜點的好日子.svg" alt="今天是個吃甜點的好日子" style="width:59.28px;">
-                </div>
-            </div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <!--social-link-->
-                    <div class="col-md-5 d-flex align-items-center p-0">
-                        <a href="#" class="pe-2"><i class="fas fa-at bg-primary text-secondary rounded" style="font-size: 24px;padding: 2px"></i></a>
-                        <a href="#"><i class="fab fa-facebook-square text-primary" style="font-size: 32px;"></i></a>
-                    </div>
-                    <!--copyright-->
-                    <p class="col-md-5 text-primary d-flex justify-content-md-end p-0 pt-4 pt-md-0">© 2018 Sweetaste* All Rights Reserved</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <script type="text/javascript" src="layout/footer.js"></script> 
+    <!--footer-end-->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>

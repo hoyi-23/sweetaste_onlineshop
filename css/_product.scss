@@ -1,0 +1,21 @@
+//header
+.product_header_img{
+    background-image: url(https://bit.ly/2Qodh3Z);
+    height: 277px;
+    @include lg{
+        height: 496px;
+    }
+}
+.product_header_img_text{
+    background-image: url(/img/lg-想吃甜點是不需要理由的.svg);
+    height: 218.52px;
+    width: 59.41px;
+    top: 30px;
+    right: 29.99px;
+    @include lg{
+        height: 327.79px;
+        width: 89.1px;
+        top: 20px;
+        right: 49.9px;
+    }
+}
