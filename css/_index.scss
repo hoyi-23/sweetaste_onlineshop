@@ -142,7 +142,7 @@ main{
 }
 //product_list
 .product_img::before{
-    content: "本日精選";
+    content: attr(some-attribute-name);
     background-color: $primary;
     padding: 10px;
     font-weight: bold;
@@ -160,18 +160,6 @@ main{
         color: #fff;
         background-color: $primary;
     }
-}
-.product_img_1{
-    background-image: url(https://bit.ly/2zBjQuq);
-    height: 315px;
-}
-.product_img_2{
-    background-image: url(https://bit.ly/2zBDAxX);
-    height: 315px;
-}
-.product_img_3{
-    background-image: url(https://bit.ly/2QbVsVR);
-    height: 315px;
 }
 //footer
 .fa-envelope{
